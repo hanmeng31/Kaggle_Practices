@@ -19,3 +19,5 @@ If a column has many null values than a threshold (e.g. more than 15%), we can c
 There is a need to detect outliers. They can affect models and tell some insights. To detect outliers, we can transform data into a distribution with mean 0 and std 1. If some samples are far from the mean, they might be the outliers.
 
 We can possibly use log transformation to deal with skewness in distribution.
+
+A good online statistics book: http://onlinestatbook.com/2/index.html
