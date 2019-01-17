@@ -23,7 +23,8 @@ If you want to consider inf and -inf to be “NA” in computations, you can set
 
 
 Lessons learned about treating missing values.
-    (1) When the distribution for a feature is not wide and the values of the feature do not depend on other features, then we can use the average of the same type of replace NA values.
+    (1) When the distribution for a feature is not wide and the values of the feature do not depend on other features, then we can use the average of the same type of replace NA values. This is also called imputation.
     (2) When NA values represent nothing, we may not want to replace them with 0. The reason is that if the distribution of valid values are far from 0, when scale the values between [0, 1], the result will be skewed a lot. Therefore, it will be better to replace NA with the global min value of the feature.
     (3) When the values in NA locations are potentially correlated with other features, it will be great to use interpolation methods (using the relationship with the other features, estimate the possible value for each NA location).
     (4) When the number of NA values is very tiny compared with the total amount of samples, we can consider drop those samples with NA values.
+    (5) If a feature in both training and testing data has most of them NA, we can consider dropping the feature column from both training and testing data.
