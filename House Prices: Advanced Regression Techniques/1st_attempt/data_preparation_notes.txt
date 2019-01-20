@@ -1,0 +1,5 @@
+
+1. Check the correlations among features.
+2. Get rid of bad values or outliers after checking features visually. Think outliers as unusually samples that will negatively influence the model in predictions.
+3. Handle NA values.
+4. Check distribution, if skewed, we can take log to make them more like normal distribution.
